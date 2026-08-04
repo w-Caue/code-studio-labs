@@ -1,0 +1,33 @@
+.relativeButtom {
+    position: relative;
+}
+
+.custom-prev,
+.custom-next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:#111827;
+    color:white;
+    border:none;
+    cursor:pointer;
+    z-index:100;
+    transition:.3s;
+}
+
+.custom-prev{
+    left:-25px;
+}
+
+.custom-next{
+    right:-25px;
+}
+
+.custom-prev:hover,
+.custom-next:hover{
+    background:#f97316;
+    transform:translateY(-50%) scale(1.08);
+}

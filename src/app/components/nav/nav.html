@@ -1,0 +1,49 @@
+<nav [class.bg-white/95]="scrolled" [class.backdrop-blur-md]="scrolled" [class.shadow-lg]="scrolled"
+    class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <div class="flex justify-between items-center px-8 py-4">
+        <img src="img/logos/logo1-black.svg" class="w-44" alt="logo code studio labs">
+
+        <ul class="hidden lg:flex items-center gap-5 uppercase">
+            <li>
+                <a href="#home" class="nav-link hover:text-[#F97316]">Home</a>
+            </li>
+
+            <li>
+                <a href="#services" class="nav-link hover:text-[#F97316]">Serviços</a>
+            </li>
+
+            <li>
+                <a href="#projects" class="nav-link hover:text-[#F97316]">Projetos</a>
+            </li>
+
+            <li>
+                <a href="#about" class="nav-link hover:text-[#F97316]">Sobre</a>
+            </li>
+
+            <li>
+                <a href="#contact" class="nav-link hover:text-[#F97316]">Contato</a>
+            </li>
+        </ul>
+
+        <button
+            class="group hidden lg:flex items-center gap-3 rounded-lg bg-[#F97316] px-6 py-3 font-semibold text-white uppercase shadow-lg shadow-orange-500/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#EA580C] hover:shadow-xl hover:shadow-orange-500/30 active:translate-y-0 cursor-pointer">
+            <i class="fa-solid fa-phone text-lg transition-transform duration-300 group-hover:rotate-15"></i>
+            <span>Solicitar orçamento</span>
+        </button>
+        <div class="flex lg:hidden">
+            <app-sidebar></app-sidebar>
+        </div>
+
+        <!-- <button
+            class="group relative overflow-hidden rounded-xl bg-orange-500 px-6 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 cursor-pointer">
+            <span
+                class="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 group-hover:translate-x-full"></span>
+
+            <span class="relative flex items-center gap-3">
+                <i class="fa-solid fa-phone"></i>
+                Solicitar orçamento
+            </span>
+        </button> -->
+    </div>
+
+</nav>

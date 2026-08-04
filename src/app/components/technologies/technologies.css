@@ -1,0 +1,74 @@
+.tech {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 16px 26px;
+
+    background: white;
+
+    border: 1px solid rgb(226 232 240);
+
+    border-radius: 18px;
+
+    font-weight: 600;
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .05);
+
+    transition: .35s;
+
+    cursor: default;
+
+}
+
+.tech i {
+
+    font-size: 30px;
+
+}
+
+.tech:hover {
+
+    transform:
+        translateY(-8px) rotate(-2deg) scale(1.04);
+
+    border-color: #f97316;
+
+    box-shadow:
+        0 20px 40px rgba(249, 115, 22, .15);
+
+}
+
+.tech-xl {
+
+    padding: 22px 34px;
+    font-size: 22px;
+
+}
+
+.tech-xl i {
+
+    font-size: 42px;
+
+}
+
+.tech-lg {
+
+    padding: 18px 28px;
+    font-size: 19px;
+
+}
+
+.tech-sm {
+
+    padding: 12px 18px;
+    font-size: 15px;
+
+}
+
+.tech-sm i {
+
+    font-size: 22px;
+
+}

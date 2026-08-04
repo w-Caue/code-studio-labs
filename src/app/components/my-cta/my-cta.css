@@ -1,0 +1,59 @@
+.benefit {
+
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    background: #f8fafc;
+
+    transition: .3s;
+
+}
+
+.benefit:hover {
+
+    transform: translateY(-5px);
+
+    background: white;
+
+    box-shadow: 0 15px 40px rgba(15, 23, 42, .08);
+
+}
+
+.benefit i {
+
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #fff7ed;
+
+    color: #f97316;
+
+    font-size: 20px;
+
+}
+
+.benefit h4 {
+
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 6px;
+
+}
+
+.benefit p {
+
+    color: #64748b;
+    line-height: 1.6;
+
+}
