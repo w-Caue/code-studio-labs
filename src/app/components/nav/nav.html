@@ -1,49 +1,89 @@
-<nav [class.bg-white/95]="scrolled" [class.backdrop-blur-md]="scrolled" [class.shadow-lg]="scrolled"
-    class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
-    <div class="flex justify-between items-center px-8 py-4">
-        <img src="img/logos/logo1-black.svg" class="w-44" alt="logo code studio labs">
+<nav
+  [class.bg-white/90]="scrolled"
+  [class.backdrop-blur-xl]="scrolled"
+  [class.shadow-lg]="scrolled"
+  [class.border-b]="scrolled"
+  [class.border-slate-200/70]="scrolled"
+  class="fixed left-0 top-0 z-50 w-full border-transparent bg-white/0 transition-all duration-300"
+>
+  <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
+    <!-- LOGO -->
+    <a href="#home" class="group flex items-center">
+      <img
+        src="img/logos/logo1-black.svg"
+        class="w-40 transition-transform duration-300 group-hover:scale-[1.02]"
+        alt="Code Studio Labs"
+      />
+    </a>
 
-        <ul class="hidden lg:flex items-center gap-5 uppercase">
-            <li>
-                <a href="#home" class="nav-link hover:text-[#F97316]">Home</a>
-            </li>
+    <!-- MENU DESKTOP -->
+    <ul class="hidden items-center gap-8 lg:flex">
+      <li>
+        <a
+          href="#home"
+          class="nav-link relative py-2 text-sm font-semibold uppercase tracking-wide text-[#343A40] transition-colors duration-300 hover:text-indigo-600"
+        >
+          Home
+        </a>
+      </li>
 
-            <li>
-                <a href="#services" class="nav-link hover:text-[#F97316]">Serviços</a>
-            </li>
+      <li>
+        <a
+          href="#services"
+          class="nav-link relative py-2 text-sm font-semibold uppercase tracking-wide text-[#343A40] transition-colors duration-300 hover:text-indigo-600"
+        >
+          Serviços
+        </a>
+      </li>
 
-            <li>
-                <a href="#projects" class="nav-link hover:text-[#F97316]">Projetos</a>
-            </li>
+      <li>
+        <a
+          href="#projects"
+          class="nav-link relative py-2 text-sm font-semibold uppercase tracking-wide text-[#343A40] transition-colors duration-300 hover:text-indigo-600"
+        >
+          Projetos
+        </a>
+      </li>
 
-            <li>
-                <a href="#about" class="nav-link hover:text-[#F97316]">Sobre</a>
-            </li>
+      <li>
+        <a
+          href="#about"
+          class="nav-link relative py-2 text-sm font-semibold uppercase tracking-wide text-[#343A40] transition-colors duration-300 hover:text-indigo-600"
+        >
+          Sobre
+        </a>
+      </li>
 
-            <li>
-                <a href="#contact" class="nav-link hover:text-[#F97316]">Contato</a>
-            </li>
-        </ul>
+      <li>
+        <a
+          href="#contact"
+          class="nav-link relative py-2 text-sm font-semibold uppercase tracking-wide text-[#343A40] transition-colors duration-300 hover:text-indigo-600"
+        >
+          Contato
+        </a>
+      </li>
+    </ul>
 
-        <button
-            class="group hidden lg:flex items-center gap-3 rounded-lg bg-[#F97316] px-6 py-3 font-semibold text-white uppercase shadow-lg shadow-orange-500/20 transition-all duration-300 hover:-translate-y-1 hover:bg-[#EA580C] hover:shadow-xl hover:shadow-orange-500/30 active:translate-y-0 cursor-pointer">
-            <i class="fa-solid fa-phone text-lg transition-transform duration-300 group-hover:rotate-15"></i>
-            <span>Solicitar orçamento</span>
-        </button>
-        <div class="flex lg:hidden">
-            <app-sidebar></app-sidebar>
-        </div>
+    <!-- CTA DESKTOP -->
+    <button
+      class="group hidden cursor-pointer items-center gap-3 rounded-xl bg-[#343A40] px-5 py-3 text-sm font-bold uppercase tracking-wide text-white shadow-lg shadow-slate-900/10 transition-all duration-300 hover:-translate-y-0.5 hover:bg-indigo-600 hover:shadow-xl hover:shadow-indigo-500/20 lg:flex"
+    >
+      <i
+        class="fa-solid fa-comment-dots text-base transition-transform duration-300 group-hover:scale-110"
+      >
+      </i>
 
-        <!-- <button
-            class="group relative overflow-hidden rounded-xl bg-orange-500 px-6 py-3 font-semibold text-white transition-all duration-300 hover:scale-105 cursor-pointer">
-            <span
-                class="absolute inset-0 -translate-x-full bg-white/20 transition-transform duration-700 group-hover:translate-x-full"></span>
+      <span> Solicitar orçamento </span>
 
-            <span class="relative flex items-center gap-3">
-                <i class="fa-solid fa-phone"></i>
-                Solicitar orçamento
-            </span>
-        </button> -->
+      <i
+        class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"
+      >
+      </i>
+    </button>
+
+    <!-- MENU MOBILE -->
+    <div class="flex lg:hidden">
+      <app-sidebar></app-sidebar>
     </div>
-
+  </div>
 </nav>

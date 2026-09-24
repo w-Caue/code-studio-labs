@@ -1,104 +1,186 @@
-<header id="home">
-    <app-nav></app-nav>
+<header id="home" class="relative overflow-hidden bg-[#F8F9FA]">
+  <app-nav></app-nav>
 
-    <section class="relative overflow-hidden bg-white pt-22">
-        <div class="absolute -top-40 -left-40 h-96 w-96 rounded-full bg-orange-100 blur-3xl"></div>
-        <div class="absolute right-0 top-20 h-72 w-72 rounded-full bg-orange-50 blur-3xl"></div>
+  <section class="relative overflow-hidden pt-20">
+    <div
+      class="pointer-events-none absolute -left-40 -top-40 h-125 w-125 rounded-full bg-indigo-200/30 blur-3xl"
+    ></div>
 
-        <div class="relative mx-auto flex min-h-[90vh] container items-center px-6">
-            <div class="grid items-center gap-16 lg:grid-cols-2">
+    <div
+      class="pointer-events-none absolute -right-40 top-40 h-112.5 w-112.5 rounded-full bg-indigo-100/40 blur-3xl"
+    ></div>
 
-                <div class="">
-                    <div
-                        class="mb-3 inline-flex items-center gap-2 rounded-full border border-orange-200 bg-orange-50 px-5 py-2 text-xs font-bold text-[#F97316] uppercase">
-                        <i class="fa-solid fa-meteor text-lg"></i>
-                        Desenvolvimento Web de Alto Nível
-                    </div>
+    <div
+      class="pointer-events-none absolute left-1/2 top-1/2 h-64 w-64 -translate-x-1/2 rounded-full bg-purple-100/20 blur-3xl"
+    ></div>
 
-                    <h1 class="text-5xl font-black leading-tight lg:text-7xl">
-                        Desenvolvemos
-                        <span class="text-[#F97316]">
-                            soluções digitais
-                        </span>
-                        para empresas que querem crescer.
+    <div class="relative mx-auto flex min-h-[90vh] max-w-7xl items-center px-6 py-16 lg:px-8">
+      <div class="grid w-full items-center gap-16 lg:grid-cols-2 lg:gap-20">
+        <div>
 
-                    </h1>
+          <div
+            class="mb-6 inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-4 py-2 text-xs font-bold uppercase tracking-wider text-indigo-600"
+          >
+            <span class="flex h-2 w-2 rounded-full bg-indigo-500"></span>
 
-                    <p class="mt-8 text-lg leading-8 text-slate-600">
-                        Criamos sites, landing pages e sistemas personalizados
-                        focados em performance, design moderno e experiência do usuário.
-                    </p>
+            Desenvolvimento digital
+          </div>
 
-                    <div class="mt-10 flex flex-wrap gap-5">
-                        <button
-                            class="flex items-center gap-2 rounded-xl bg-orange-500 px-8 py-4 font-semibold text-sm text-white uppercase shadow-xl shadow-orange-500/20 transition hover:-translate-y-1 hover:bg-orange-600 cursor-pointer">
-                            <i class="fa-solid fa-comment text-lg"></i>
-                            Solicitar orçamento
-                        </button>
+          <h1
+            class="max-w-3xl text-5xl font-black leading-[1.05] tracking-tight text-[#343A40] sm:text-6xl lg:text-7xl"
+          >
+            Tecnologia para
 
-                        <button
-                            class="flex items-center gap-2 rounded-xl border-2 border-slate-300 px-8 py-4 font-semibold text-sm uppercase transition hover:border-orange-500 hover:text-orange-500 cursor-pointer">
-                            <i class="fa-solid fa-right-long text-lg"></i>
-                            Conhecer projetos
-                        </button>
+            <span
+              class="bg-linear-to-r from-indigo-600 to-violet-500 bg-clip-text text-transparent"
+            >
+              transformar
+            </span>
 
-                    </div>
+            ideias em resultados.
+          </h1>
 
-                </div>
+          <p class="mt-7 max-w-2xl text-lg leading-8 text-slate-600 lg:text-xl">
+            Desenvolvemos sites, sistemas e soluções digitais sob medida para empresas que buscam
+            presença online, eficiência e crescimento.
+          </p>
 
-                <div class="relative flex justify-center">
-                    <div class="grid w-full max-w-md gap-5">
+          <div class="mt-10 flex flex-wrap gap-4">
+            <button
+              class="group flex cursor-pointer items-center gap-3 rounded-xl bg-[#343A40] px-7 py-4 text-sm font-bold uppercase tracking-wide text-white shadow-lg shadow-slate-900/10 transition-all duration-300 hover:-translate-y-1 hover:bg-indigo-600 hover:shadow-indigo-500/20"
+            >
+              <i class="fa-solid fa-comment-dots text-lg"></i>
 
-                        <div class="rounded-3xl border border-slate-200 bg-white p-7 shadow-xl">
-                            <div
-                                class="mb-4 flex size-14 items-center justify-center text-[#F97316] rounded-2xl bg-orange-100">
-                                <i class="fa-solid fa-earth-americas text-2xl"></i>
-                            </div>
+              Solicitar orçamento
 
-                            <h3 class="text-lg font-bold uppercase">
-                                Sites Institucionais
-                            </h3>
+              <i
+                class="fa-solid fa-arrow-right text-xs transition-transform duration-300 group-hover:translate-x-1"
+              >
+              </i>
+            </button>
 
-                            <p class="mt-3 text-slate-500">
-                                Sites rápidos, modernos e responsivos para fortalecer sua presença online.
-                            </p>
+            <button
+              class="flex cursor-pointer items-center gap-3 rounded-xl border border-slate-300 bg-white px-7 py-4 text-sm font-bold uppercase tracking-wide text-[#343A40] transition-all duration-300 hover:-translate-y-1 hover:border-indigo-300 hover:text-indigo-600 hover:shadow-lg hover:shadow-indigo-500/10"
+            >
+              <i class="fa-solid fa-layer-group text-lg"></i>
+              Conhecer projetos
+            </button>
+          </div>
 
-                        </div>
-
-                        <div class="translate-x-4 sm:translate-x-10 rounded-3xl border border-slate-200 bg-white p-7 shadow-xl">
-                            <div
-                                class="mb-4 flex size-14 items-center justify-center text-[#F97316] rounded-2xl bg-orange-100">
-                                <i class="fa-solid fa-gear text-2xl"></i>
-                            </div>
-
-                            <h3 class="text-lg font-bold uppercase">
-                                Sistemas Web
-                            </h3>
-
-                            <p class="mt-3 text-slate-500">
-                                Soluções sob medida para automatizar processos e aumentar a produtividade.
-                            </p>
-                        </div>
-
-                        <div class="rounded-3xl border border-slate-200 bg-white p-7 shadow-xl">
-                            <div
-                                class="mb-4 flex size-14 items-center justify-center text-[#F97316] rounded-2xl bg-orange-100">
-                                <i class="fa-solid fa-rocket text-2xl"></i>
-                            </div>
-
-                            <h3 class="text-lg font-bold uppercase">
-                                Alta Performance
-                            </h3>
-
-                            <p class="mt-3 text-slate-500">
-                                Tecnologias modernas para entregar velocidade, segurança e escalabilidade.
-                            </p>
-                        </div>
-
-                    </div>
-                </div>
-
+          <div class="mt-12 flex flex-wrap items-center gap-x-8 gap-y-4 text-sm text-slate-500">
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-indigo-500"></i>
+              Desenvolvimento sob medida
             </div>
+
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-indigo-500"></i>
+              Design responsivo
+            </div>
+
+            <div class="flex items-center gap-2">
+              <i class="fa-solid fa-circle-check text-indigo-500"></i>
+              Alta performance
+            </div>
+          </div>
         </div>
-    </section>
+
+        <div class="relative">
+          <div
+            class="absolute -right-4 -top-8 hidden h-20 w-20 rounded-2xl border border-indigo-200 bg-white/60 backdrop-blur-sm sm:block"
+          ></div>
+
+          <div
+            class="absolute -bottom-8 -left-4 hidden h-16 w-16 rounded-full bg-indigo-100 sm:block"
+          ></div>
+
+          <div class="relative grid gap-5">
+            <div
+              class="group relative rounded-3xl border border-slate-200/80 bg-white p-7 shadow-xl shadow-slate-900/5 transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200 hover:shadow-2xl hover:shadow-indigo-500/10"
+            >
+              <div class="flex items-start gap-5">
+                <div
+                  class="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 transition-colors duration-300 group-hover:bg-indigo-600 group-hover:text-white"
+                >
+                  <i class="fa-solid fa-globe text-2xl"></i>
+                </div>
+
+                <div>
+                  <h3 class="text-lg font-bold uppercase tracking-wide text-[#343A40]">
+                    Sites Institucionais
+                  </h3>
+
+                  <p class="mt-2 leading-6 text-slate-500">
+                    Sites modernos, rápidos e responsivos para fortalecer a presença digital da sua
+                    empresa.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group ml-4 rounded-3xl border border-slate-200/80 bg-white p-7 shadow-xl shadow-slate-900/5 transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200 hover:shadow-2xl hover:shadow-indigo-500/10 sm:ml-10"
+            >
+              <div class="flex items-start gap-5">
+                <div
+                  class="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 transition-colors duration-300 group-hover:bg-indigo-600 group-hover:text-white"
+                >
+                  <i class="fa-solid fa-code text-2xl"></i>
+                </div>
+
+                <div>
+                  <h3 class="text-lg font-bold uppercase tracking-wide text-[#343A40]">
+                    Sistemas Web
+                  </h3>
+
+                  <p class="mt-2 leading-6 text-slate-500">
+                    Sistemas personalizados para automatizar processos e tornar sua operação mais
+                    eficiente.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="group rounded-3xl border border-slate-200/80 bg-white p-7 shadow-xl shadow-slate-900/5 transition-all duration-300 hover:-translate-y-1 hover:border-indigo-200 hover:shadow-2xl hover:shadow-indigo-500/10"
+            >
+              <div class="flex items-start gap-5">
+                <div
+                  class="flex size-14 shrink-0 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600 transition-colors duration-300 group-hover:bg-indigo-600 group-hover:text-white"
+                >
+                  <i class="fa-solid fa-rocket text-2xl"></i>
+                </div>
+
+                <div>
+                  <h3 class="text-lg font-bold uppercase tracking-wide text-[#343A40]">
+                    Soluções Digitais
+                  </h3>
+
+                  <p class="mt-2 leading-6 text-slate-500">
+                    Tecnologia pensada para entregar performance, segurança e escalabilidade.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="absolute -bottom-5 right-5 hidden items-center gap-3 rounded-2xl border border-slate-200 bg-white px-5 py-4 shadow-xl sm:flex"
+          >
+            <div
+              class="flex size-10 items-center justify-center rounded-xl bg-indigo-50 text-indigo-600"
+            >
+              <i class="fa-solid fa-bolt"></i>
+            </div>
+
+            <div>
+              <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Foco</p>
+
+              <p class="text-sm font-bold text-[#343A40]">Resultado & Performance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </header>
